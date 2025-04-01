@@ -1,0 +1,40 @@
+textarea {
+    min-height: 400px;
+}
+
+.email-row {
+    transition: background-color 0.2s;
+}
+
+.email-row:hover {
+    background-color: #f1f1f1 !important;
+}
+
+.subject {
+    flex-grow: 1;
+    margin: 0 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.timestamp {
+    color: #777;
+    font-size: 0.9em;
+}
+
+#email-view {
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
